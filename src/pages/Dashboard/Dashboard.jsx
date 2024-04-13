@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Seminar from "./Seminar";
 import Practice from "./Practice";
 import { FaUser } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
     const [status, setStatus] = useState(false);
@@ -19,26 +20,26 @@ const Dashboard = () => {
         <div>
             <div className="navbar container">
                 <h1>Thomas Shelby</h1>
-                <div className="btn-avatar">
-                    <FaUser size={30} color="blue" />
-                </div>
+                <Link to="/profile" className="btn-avatar ">
+                    <FaUser size={30} color="steelblue" />
+                </Link>
             </div>
             <div className="dashboard-btns container">
                 <button
                     className={isActive ? "" : "active"}
                     onClick={changeStatusToFalse}
                 >
-                    Practice
+                    Seminar
                 </button>
                 <button
                     className={isActive ? "active" : ""}
                     onClick={changeStatusToTrue}
                 >
-                    Seminar
+                    Practice
                 </button>
             </div>
             <div className="container">
-                {status ? <Seminar /> : <Practice />}
+                {status ? <Practice /> : <Seminar />}
             </div>
         </div>
     );

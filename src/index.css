@@ -1,5 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.seminar {
+    background: url(./assets//backgroundseminar.webp);
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.seminar p {
+    color: white;
+    font-size: 18px;
+}
+
+.title-seminar {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 50px;
 }
