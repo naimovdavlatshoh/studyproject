@@ -17,10 +17,7 @@ const Profile = () => {
                         gap: 30,
                     }}
                 >
-                    <p className="name">
-                        Firstname: &nbsp;
-                        ........................................................
-                    </p>
+                    <p className="name">Firstname: &nbsp;</p>
                     <p className="name">Jasur</p>
                 </div>
                 <div
@@ -31,10 +28,7 @@ const Profile = () => {
                         gap: 30,
                     }}
                 >
-                    <p className="name">
-                        Lastname: &nbsp;
-                        ........................................................
-                    </p>
+                    <p className="name">Lastname: &nbsp;</p>
                     <p className="name">Arabov</p>
                 </div>
                 <div
@@ -45,38 +39,7 @@ const Profile = () => {
                         gap: 30,
                     }}
                 >
-                    <p className="name">
-                        Age: &nbsp;
-                        ........................................................
-                    </p>
-                    <p className="name">30</p>
-                </div>
-                <div
-                    style={{
-                        marginBottom: 30,
-                        display: "flex",
-                        justifyContent: "start",
-                        gap: 30,
-                    }}
-                >
-                    <p className="name">
-                        Age: &nbsp;
-                        ........................................................
-                    </p>
-                    <p className="name">30</p>
-                </div>
-                <div
-                    style={{
-                        marginBottom: 30,
-                        display: "flex",
-                        justifyContent: "start",
-                        gap: 30,
-                    }}
-                >
-                    <p className="name">
-                        Age: &nbsp;
-                        ........................................................
-                    </p>
+                    <p className="name">Age: &nbsp;</p>
                     <p className="name">30</p>
                 </div>
             </div>
