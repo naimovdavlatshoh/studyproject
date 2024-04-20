@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Dashboard, DefaultPage } from "./pages";
 import { Route, Routes } from "react-router-dom";
 import SeminarDetail from "./pages/Seminar/SeminarDetail";
@@ -6,15 +6,18 @@ import "./index.css";
 import Profile from "./pages/Profile/Profile";
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
-        <Routes>
-            <Route path={"/"} element={<DefaultPage />} />
-            <Route path={"/dashboard"} element={<Dashboard />} />
-            <Route path={"dashboard/seminar/:id"} element={<SeminarDetail />} />
-            <Route path={"/profile"} element={<Profile />} />
-        </Routes>
+        <>
+            <Routes>
+                <Route path={"/"} element={<DefaultPage />} />
+                <Route path={"/dashboard"} element={<Dashboard />} />
+                <Route
+                    path={"dashboard/seminar/:id"}
+                    element={<SeminarDetail />}
+                />
+                <Route path={"/profile"} element={<Profile />} />
+            </Routes>
+        </>
     );
 }
 
