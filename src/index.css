@@ -11,7 +11,7 @@
 .seminar {
     background: url(./assets//backgroundseminar.webp);
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     overflow-y: scroll;
     background-size: cover;
     background-repeat: no-repeat;
